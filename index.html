@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buracos Negros — Onde a Física Quebra</title>
+    <meta name="description"
+        content="Explore os mistérios dos buracos negros: formação, horizonte de eventos, espaguetificação, radiação Hawking e muito mais.">
+    <meta property="og:title" content="Buracos Negros — Onde a Física Quebra">
+    <meta property="og:description" content="Uma jornada imersiva pelos objetos mais extremos do universo.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <canvas id="space-canvas"></canvas>
+
+   
+     <div id="loader">
+        <div class="loader-ring"></div>
+        <p class="loader-text">Entrando no Cosmos...</p>
+    </div>
+
+    
+    <div id="cursor-follower"></div>
+
+   
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">BLACK HOLES</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero">Início</a>
+                <a href="#what-are">Conceitos</a>
+                <a href="#formation">Formação</a>
+                <a href="#types">Tipos</a>
+                <a href="#physics">Física</a>
+                <a href="#famous">Famosos</a>
+                <a href="#timeline">História</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-tag">Explorando o Desconhecido</p>
+                <h1 class="hero-title">Buracos Negros</h1>
+                <p class="hero-subtitle">
+                    Onde o espaço-tempo se curva ao infinito e nem a luz escapa
+                </p>
+                <button class="btn btn-primary" id="explore-btn">Iniciar Jornada</button>
+            </div>
+            <div class="hero-visual">
+                <div class="black-hole-container">
+                    <div class="accretion-disk"></div>
+                    <div class="black-hole-core"></div>
+                    <div class="event-horizon"></div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="beginner">
+        <div class="container">
+            <h2 class="section-title">Para Iniciantes</h2>
+            <div class="content-wrapper">
+                <div class="text-content glass">
+                    <h3>Em termos simples...</h3>
+                    <p>Imagine o universo como um grande trampolim elástico. Planetas e estrelas são como bolas de boliche pesadas colocadas nele, criando um afundamento. Um buraco negro é como colocar uma bola minúscula, mas infinitamente pesada, que cria um buraco tão fundo no elástico que tudo que cai ali não consegue mais subir — nem mesmo a luz!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="what-are">
+        <div class="container">
+            <h2 class="section-title">O que são Buracos Negros?</h2>
+            <div class="content-wrapper two-col">
+                <div class="text-content">
+                    <p>Um buraco negro é uma região do espaço-tempo onde a gravidade é tão intensa que nada — nem mesmo
+                        a luz — consegue escapar. Essa gravidade extrema surge quando uma quantidade enorme de matéria é
+                        comprimida em um espaço incrivelmente pequeno.</p>
+                    <p>Buracos negros não são "buracos" no sentido literal — são objetos com massa absurdamente concentrada. Eles não
+                        sugam tudo ao redor como aspiradores cósmicos; você poderia orbitar um buraco negro tranquilamente se estivesse em uma distância segura.</p>
+                </div>
+                <div class="visual-content">
+                    <div class="card glass gravity-card">
+                        <div class="gravity-well">
+                            <div class="grid-warp"></div>
+                            <div class="well-core"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="formation">
+        <div class="container">
+            <h2 class="section-title">Como se Formam</h2>
+            <div class="steps-timeline">
+                <div class="step glass">
+                    <div class="step-icon">🌟</div>
+                    <h3>Estrela Massiva</h3>
+                    <p>Uma estrela gigante queima combustível nuclear, mantendo equilíbrio entre gravidade e pressão térmica.</p>
+                </div>
+                <div class="step glass">
+                    <div class="step-icon">🪫</div>
+                    <h3>Combustível Esgotado</h3>
+                    <p>Sem combustível, a estrela esfria. A pressão interna cai e a gravidade vence.</p>
+                </div>
+                <div class="step glass">
+                    <div class="step-icon">💥</div>
+                    <h3>Supernova</h3>
+                    <p>O núcleo colapsa violentamente e as camadas externas explodem em uma das maiores explosões do universo.</p>
+                </div>
+                <div class="step glass">
+                    <div class="step-icon">⚫</div>
+                    <h3>Singularidade</h3>
+                    <p>O núcleo restante colapsa sob seu próprio peso até se tornar um ponto infinitamente denso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="sizes">
+        <div class="container">
+            <h2 class="section-title">Escala Cósmica</h2>
+            <div class="cards-grid card-grid-3">
+                <div class="card glass">
+                    <h3 class="card-title">Massa da Terra</h3>
+                    <p class="card-body">Se transformássemos a Terra em um buraco negro, ele teria o tamanho de uma <strong>bola de gude</strong> (~1.7 cm).</p>
+                </div>
+                <div class="card glass">
+                    <h3 class="card-title">Massa do Sol</h3>
+                    <p class="card-body">Um buraco negro com a massa do nosso Sol teria apenas cerca de <strong>6 km de diâmetro</strong> (caberia em uma cidade).</p>
+                </div>
+                <div class="card glass">
+                    <h3 class="card-title">M87* (Supermassivo)</h3>
+                    <p class="card-body">Tão colossal que abrangeria <strong>todo o nosso Sistema Solar</strong> com sobra (38 bilhões de km de diâmetro).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="physics">
+        <div class="container">
+            <h2 class="section-title">A Física Extrema</h2>
+            
+            <div class="physics-grid">
+                
+                <div class="physics-item glass">
+                    <h3>Horizonte de Eventos</h3>
+                    <p>A fronteira do não-retorno. A partir deste ponto, a velocidade de escape excede a velocidade da luz (299.792 km/s). Para quem observa de fora, algo caindo pareceria congelar no tempo no horizonte antes de desaparecer na escuridão.</p>
+                </div>
+
+                
+                <div class="physics-item glass">
+                    <h3>Singularidade</h3>
+                    <p>O centro do buraco negro, onde toda a massa é esmagada em um volume infinitamente pequeno. Aqui, a densidade e a curvatura do espaço-tempo tornam-se infinitas, e as leis conhecidas da física quebram.</p>
+                </div>
+
+                
+                <div class="physics-item glass">
+                    <h3>Espaguetificação</h3>
+                    <p>Um efeito real e aterrorizante. Perto de um buraco negro estelar, a gravidade nos seus pés seria tão mais forte do que na sua cabeça que você seria esticado verticalmente como um macarrão espaguete muito antes de atingir o centro.</p>
+                </div>
+
+                
+                <div class="physics-item glass">
+                    <h3>Dilatação Temporal</h3>
+                    <p>Devido à extrema curvatura do espaço, o tempo passa muito mais devagar próximo a um buraco negro em relação a quem está longe. Uma hora perto do buraco negro pode equivaler a décadas na Terra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="types">
+        <div class="container">
+            <h2 class="section-title">Classificação</h2>
+            <div class="cards-grid card-grid-4">
+                <div class="card glass">
+                    <div class="card-icon">⭐</div>
+                    <h3 class="card-title">Estelares</h3>
+                    <p class="card-mass">5 – 100 Massas Solares</p>
+                    <p class="card-body">Nascem de supernovas. Existem milhões deles silenciosos vagando pela nossa galáxia.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon">⚖️</div>
+                    <h3 class="card-title">Intermediários</h3>
+                    <p class="card-mass">100 – 100.000 Massas Solares</p>
+                    <p class="card-body">O elo perdido. Acredita-se que surjam de fusões contínuas em aglomerados estelares.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon">🌌</div>
+                    <h3 class="card-title">Supermassivos</h3>
+                    <p class="card-mass">Milhões a Bilhões de M.</p>
+                    <p class="card-body">Enormes e antigos. Ficam no coração da maioria das galáxias espirais e elípticas.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon">🔬</div>
+                    <h3 class="card-title">Primordiais</h3>
+                    <p class="card-mass">Subatômicos a Estelares</p>
+                    <p class="card-body">Teóricos. Formados pelas altas densidades instantes após o Big Bang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="famous">
+        <div class="container">
+            <h2 class="section-title">Retratos Reais</h2>
+            <p class="section-subtitle">Imagens reais capturadas pelo consórcio EHT (Event Horizon Telescope).</p>
+            <div class="cards-grid card-grid-2">
+                <div class="card glass real-image-card">
+                    <img src="https://img.odcdn.com.br/wp-content/uploads/2024/08/sagittarius-a-1920x1080.png" alt="Imagem real de Sagittarius A*" loading="lazy" class="real-image">
+                    <h3 class="card-title">Sagittarius A*</h3>
+                    <p class="famous-data">4,3 milhões M☉ · 26.000 anos-luz</p>
+                    <p class="card-body">O monstro adormecido no centro da Via Láctea. A imagem foi capturada em 2022 e confirmou sua existência visual.</p>
+                </div>
+                <div class="card glass real-image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Messier_87_Hubble_WikiSky.jpg/250px-Messier_87_Hubble_WikiSky.jpg" alt="Imagem real de M87*" loading="lazy" class="real-image">
+                    <h3 class="card-title">M87*</h3>
+                    <p class="famous-data">6,5 bilhões M☉ · 55 milhões de anos-luz</p>
+                    <p class="card-body">A primeira foto de um buraco negro na história (2019). Este gigante emite jatos de plasma que viajam por milhares de anos-luz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    >
+    <section id="hawking-curiosities">
+        <div class="container">
+            <h2 class="section-title">Radiação Hawking & Curiosidades</h2>
+            <div class="content-wrapper two-col">
+                <div class="text-content glass">
+                    <h3>Eles Não São Eternos</h3>
+                    <p>Stephen Hawking provou que, devido a efeitos quânticos complexos na beira do horizonte de eventos, buracos negros emitem uma fraca radiação térmica. Isso significa que eles estão lentamente "evaporando". No entanto, para um buraco negro estelar típico, isso levará trilhões e trilhões de anos (muito mais que a idade atual do universo).</p>
+                </div>
+                <div class="text-content glass">
+                    <h3>3 Curiosidades</h3>
+                    <ul class="curiosity-list">
+                        <li><strong>A Esfera de Fótons:</strong> Existe um ponto onde a luz orbita o buraco negro em círculos. Se você ficasse lá, poderia ver a parte de trás da sua própria cabeça!</li>
+                        <li><strong>Nem todos são pretos:</strong> Os discos de acreção giram tão rápido que brilham intensamente em raios-X e luz visível. São os objetos mais brilhantes do cosmos (quasares).</li>
+                        <li><strong>Grito Gravitacional:</strong> Quando dois buracos negros colidem, eles agitam o próprio tecido do espaço, gerando Ondas Gravitacionais que viajam pelo universo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="timeline">
+        <div class="container">
+            <h2 class="section-title">Linha do Tempo</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1915</div>
+                    <div class="timeline-content">
+                        <h3>Relatividade Geral</h3>
+                        <p>Einstein publica sua teoria. A matemática indicava a possibilidade de singularidades, o que ele próprio achava improvável na natureza.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1916</div>
+                    <div class="timeline-content">
+                        <h3>O Raio Mágico</h3>
+                        <p>Karl Schwarzschild resolve as equações de Einstein nas trincheiras da 1ª Guerra, definindo o "Raio de Schwarzschild" (Horizonte de Eventos).</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1967</div>
+                    <div class="timeline-content">
+                        <h3>Nasce o Termo</h3>
+                        <p>O físico John Wheeler populariza o termo "Buraco Negro" durante uma conferência científica.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1971</div>
+                    <div class="timeline-content">
+                        <h3>Primeira Detecção</h3>
+                        <p>Cygnus X-1 é detectado emitindo raios-X intensos, tornando-se o primeiro grande candidato a buraco negro aceito pela comunidade.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2015</div>
+                    <div class="timeline-content">
+                        <h3>Ondas Gravitacionais</h3>
+                        <p>O observatório LIGO detecta a fusão de dois buracos negros através da vibração do espaço-tempo. (Prêmio Nobel de 2017)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <h3>A Primeira Foto</h3>
+                        <p>O consórcio EHT divulga a imagem de M87*, a primeira prova visual direta da sombra de um buraco negro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="stats">
+        <div class="container">
+            <h2 class="section-title">Números do Cosmos</h2>
+            <div class="stats-grid">
+                <div class="stat-item glass">
+                    <span class="stat-number" data-target="100000000">+</span>
+                    <span class="stat-label">Buracos negros apenas na Via Láctea</span>
+                </div>
+                <div class="stat-item glass">
+                    <span class="stat-number" data-target="299792">+</span>
+                    <span class="stat-label">km/s — a velocidade de escape</span>
+                </div>
+                <div class="stat-item glass">
+                    <span class="stat-number" data-target="55000000">+</span>
+                    <span class="stat-label">anos-luz até o gigante M87*</span>
+                </div>
+                <div class="stat-item glass">
+                    <span class="stat-number" data-target="4300000">+</span>
+                    <span class="stat-label">Massa do Sagittarius A* (em Sóis)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">Buracos negros sugam tudo ao seu redor?</button>
+                    <div class="faq-answer">
+                        <p>Não! Se substituíssemos o Sol por um buraco negro de mesma massa, a Terra continuaria na sua órbita atual e não seria "sugada". A atração gravitacional só se torna inegociável se você cruzar o horizonte de eventos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Para onde vai o que cai dentro deles?</button>
+                    <div class="faq-answer">
+                        <p>A massa contribui para aumentar o tamanho do buraco negro. Toda matéria é esmagada na singularidade central. Mas o que acontece com a "informação" quântica dessa matéria é um dos maiores mistérios não resolvidos da física moderna.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">É possível usar buracos negros para viagem no tempo?</button>
+                    <div class="faq-answer">
+                        <p>Teoricamente, orbitar perto de um buraco negro permite viajar para o futuro devido à dilatação temporal (o tempo passa mais devagar para você). No entanto, não há base teórica para viajar ao passado usando-os.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Eles podem destruir a Terra?</button>
+                    <div class="faq-answer">
+                        <p>Apenas se houver um colapso gravitacional ou um buraco negro vagante passar diretamente pelo nosso sistema solar, o que as observações astronômicas sugerem ser extremamente improvável num futuro próximo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="logo">SINGULARITY</span>
+                <p>Explorando as maravilhas extremas do universo.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/etec_vilaformosa/" aria-label="Instagram Etecvf">IG Etec</a>
+                <a href="https://www.instagram.com/hernandesjmj/" aria-label="Instagram">IG Dev Main</a>
+                <a href="https://www.instagram.com/1ds_evf/" aria-label="Instagram DS">IG Sala</a>
+            </div>
+            <div>
+                <h3>Feito Por: Gustavo Hernandes, Gustavo Henrique, Eduardo Valesi, Elias Cordeiro.</h2>
+                <h4>1º Ano Desenvolvimento de Sistemas Manhã - ETEC De Vila Formosa</h3>
+            </div>
+            <p style="margin-top: 2rem; color: var(--text-secondary); font-size: 0.9rem;">
+                 © 2026. Todas as imagens reais são propriedade do Event Horizon Telescope/NASA/ESA.
+                 <br>
+                 © 2026. Todos os Direitos Reservados a Gustavo Hernandes, Gustavo Henrique, Eduardo Valesi e Elias Cordeiro
+            </p>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
